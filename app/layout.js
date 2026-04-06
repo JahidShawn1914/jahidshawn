@@ -3,6 +3,7 @@ import './globals.css'
 export const metadata = {
   title: 'Jahid Shawn — Full-Stack Developer & Shopify Expert',
   description: 'Full-Stack Developer with 2+ years of experience specializing in Shopify customization, landing pages, and high-converting web solutions.',
+  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes',
 }
 
 export default function RootLayout({ children }) {

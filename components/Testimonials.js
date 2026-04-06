@@ -34,7 +34,7 @@ export default function Testimonials() {
           <span className="text-xs tracking-[0.25em] uppercase" style={{ color: 'var(--muted)' }}>Client Voices</span>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
 
           {/* Big quote */}
           <div>
@@ -45,7 +45,7 @@ export default function Testimonials() {
               WHAT CLIENTS SAY
             </h2>
 
-            <blockquote className="text-lg leading-relaxed mb-8" style={{ color: 'var(--muted)' }}>
+            <blockquote className="text-base sm:text-lg leading-relaxed mb-8" style={{ color: 'var(--muted)' }}>
               &ldquo;{testimonials[active].quote}&rdquo;
             </blockquote>
 

@@ -7,14 +7,14 @@ export default function Marquee() {
   const doubled = [...items, ...items]
 
   return (
-    <div className="w-full overflow-hidden py-5" style={{
+    <div className="w-full overflow-hidden py-3 md:py-5" style={{
       borderTop: '1px solid var(--border)',
       borderBottom: '1px solid var(--border)',
       background: 'var(--bg-2)'
     }}>
-      <div className="marquee-track flex gap-10 whitespace-nowrap w-max">
+      <div className="marquee-track flex gap-6 md:gap-10 whitespace-nowrap w-max">
         {doubled.map((item, i) => (
-          <span key={i} className="text-sm tracking-widest uppercase font-light" style={{ color: 'var(--muted)' }}>
+          <span key={i} className="text-xs md:text-sm tracking-widest uppercase font-light" style={{ color: 'var(--muted)' }}>
             {item}
           </span>
         ))}

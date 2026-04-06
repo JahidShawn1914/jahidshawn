@@ -42,7 +42,7 @@ export default function Services() {
     <section id="services" className="py-24 md:py-36 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
 
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 mb-10 md:mb-14">
           <div>
             <div className="flex items-center gap-4 mb-4">
               <span className="w-8 h-px" style={{ background: 'var(--muted)' }}></span>
@@ -60,19 +60,19 @@ export default function Services() {
         {/* Service list */}
         <div>
           {services.map((s, i) => (
-            <div key={i} className="service-item group py-6 flex flex-col md:flex-row md:items-start gap-4 md:gap-8 cursor-default">
-              <span className="font-display text-5xl md:text-6xl shrink-0 w-20 transition-opacity"
+            <div key={i} className="service-item group py-6 sm:py-8 flex flex-col md:flex-row md:items-start gap-3 md:gap-8 cursor-default border-b border-white/5 last:border-b-0">
+              <span className="font-display text-3xl sm:text-5xl md:text-6xl shrink-0 w-12 sm:w-20 transition-opacity"
                 style={{ color: 'rgba(240,237,230,0.12)' }}>
                 {s.num}
               </span>
               <div className="flex-1">
-                <h3 className="font-display text-2xl md:text-3xl mb-2 group-hover:tracking-wider transition-all duration-300">
+                <h3 className="font-display text-lg sm:text-2xl md:text-3xl mb-2 group-hover:tracking-wider transition-all duration-300">
                   {s.title}
                 </h3>
-                <p className="text-sm mb-3" style={{ color: 'var(--muted)', lineHeight: 1.7 }}>{s.desc}</p>
+                <p className="text-xs sm:text-sm mb-3" style={{ color: 'var(--muted)', lineHeight: 1.7 }}>{s.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {s.tags.map(t => (
-                    <span key={t} className="text-xs tracking-widest uppercase px-2.5 py-1"
+                    <span key={t} className="text-xs tracking-widest uppercase px-2 sm:px-2.5 py-1"
                       style={{ border: '1px solid var(--border)', color: 'var(--muted)' }}>
                       {t}
                     </span>

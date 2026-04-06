@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
     <footer className="px-6 md:px-12 py-10" style={{ borderTop: '1px solid var(--border)' }}>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between gap-6 md:gap-4 text-center md:text-left">
         <a href="#home" className="font-display text-2xl tracking-widest">JAHID.</a>
         <p className="text-xs tracking-widest uppercase" style={{ color: 'var(--muted)' }}>
           © 2025 Jahid Shawn. All rights reserved.
         </p>
-        <div className="flex gap-6">
+        <div className="flex gap-3 md:gap-6 flex-wrap justify-center md:justify-start">
           {[
             { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jahidshawn1914' },
             { label: 'GitHub', href: 'https://github.com/JahidShawn1914' },

@@ -46,7 +46,7 @@ export default function Contact() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16">
 
           {/* Info */}
           <div>
@@ -54,7 +54,7 @@ export default function Contact() {
               Have a project in mind? I&apos;d love to hear about it. Send me a message and I&apos;ll get back to you within 24 hours.
             </p>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 md:gap-6">
               <div>
                 <p className="text-xs tracking-widest uppercase mb-1" style={{ color: 'var(--muted)' }}>Email</p>
                 <a href="mailto:jahidshawn1914@gmail.com"
@@ -75,7 +75,7 @@ export default function Contact() {
             </div>
 
             {/* Social */}
-            <div className="mt-10 flex gap-4">
+            <div className="mt-8 md:mt-10 flex gap-2 md:gap-4 flex-wrap">
               {[
                 { label: 'Facebook', href: 'https://www.facebook.com/jahidshawn19141' },
                 { label: 'Instagram', href: 'https://www.instagram.com/jahidshawn1914/' },
@@ -111,8 +111,8 @@ export default function Contact() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <div className="grid grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   <div>
                     <label className="text-xs tracking-widest uppercase block mb-2" style={{ color: 'var(--muted)' }}>Name</label>
                     <input

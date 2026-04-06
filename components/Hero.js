@@ -17,7 +17,7 @@ export default function Hero() {
   const title = "JAHID SHAWN"
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-16 px-6 md:px-12 pt-24 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 pt-20 sm:pt-24 overflow-hidden">
 
       {/* Background grid */}
       <div className="absolute inset-0 pointer-events-none" style={{
@@ -40,7 +40,7 @@ export default function Hero() {
       {/* Big title */}
       <div ref={titleRef} className="mb-6 overflow-hidden">
         <h1 className="font-display leading-none"
-          style={{ fontSize: 'clamp(3.5rem, 12vw, 11rem)', color: 'var(--text)' }}>
+          style={{ fontSize: 'clamp(2.25rem, 8vw, 11rem)', color: 'var(--text)' }}>
           {title.split('').map((c, i) => (
             <span key={i} className="char inline-block opacity-0-init"
               style={{ whiteSpace: c === ' ' ? 'pre' : 'normal' }}>
@@ -51,23 +51,23 @@ export default function Hero() {
       </div>
 
       {/* Bottom row */}
-      <div className="animate-fade-up opacity-0-init delay-500 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div className="animate-fade-up opacity-0-init delay-500 flex flex-col md:flex-row md:items-end justify-between gap-6 sm:gap-8">
         <div className="max-w-md">
-          <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.7 }}>
+          <p style={{ color: 'var(--muted)', fontSize: 'clamp(0.875rem, 2vw, 1rem)', lineHeight: 1.7 }}>
             Full-Stack Developer & Shopify Expert. I help businesses grow, one
             high-converting landing page at a time.
           </p>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
           <a href="#portfolio"
-            className="group flex items-center gap-3 border border-white/20 px-7 py-3 text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300">
+            className="group flex items-center gap-3 border border-white/20 px-6 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300">
             View Works
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="group-hover:translate-x-1 transition-transform">
               <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <div className="text-right">
+          <div className="text-left sm:text-right">
             <p className="text-xs tracking-widest uppercase" style={{ color: 'var(--muted)' }}>Based in</p>
             <p className="text-sm font-medium tracking-wider">Chattogram, BD</p>
           </div>

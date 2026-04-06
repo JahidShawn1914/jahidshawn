@@ -45,7 +45,7 @@ export default function About() {
           <span className="text-xs tracking-[0.25em] uppercase" style={{ color: 'var(--muted)' }}>About Me</span>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 lg:gap-24 items-start">
 
           {/* Left — image */}
           <div className="relative">
@@ -62,9 +62,9 @@ export default function About() {
             </div>
 
             {/* Floating badge */}
-            <div className="absolute -bottom-5 -right-5 md:-right-8 px-6 py-4"
+            <div className="absolute -bottom-4 -right-4 md:-bottom-5 md:-right-8 px-4 md:px-6 py-3 md:py-4"
               style={{ background: 'var(--bg-3)', border: '1px solid var(--border)' }}>
-              <p className="font-display text-4xl">2+</p>
+              <p className="font-display text-2xl md:text-4xl">2+</p>
               <p className="text-xs tracking-widest uppercase mt-1" style={{ color: 'var(--muted)' }}>Years of<br/>Excellence</p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function About() {
             {/* Skills */}
             <div className="flex flex-wrap gap-2 mb-10">
               {['Shopify', 'Liquid', 'PageFly', 'Replo', 'GemPages', 'HTML/CSS', 'JavaScript', 'WordPress', 'WooCommerce'].map(s => (
-                <span key={s} className="text-xs tracking-widest uppercase px-3 py-1.5"
+                <span key={s} className="text-xs tracking-widest uppercase px-2 md:px-3 py-1 md:py-1.5"
                   style={{ border: '1px solid var(--border)', color: 'var(--muted)' }}>
                   {s}
                 </span>

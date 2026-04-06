@@ -35,7 +35,7 @@ export default function FAQ() {
     <section id="faq" className="py-24 md:py-36 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16">
 
           {/* Left */}
           <div className="md:sticky md:top-24 md:self-start">

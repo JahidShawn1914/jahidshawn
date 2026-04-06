@@ -34,7 +34,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto">
 
         {/* Header row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 mb-10 md:mb-14">
           <div>
             <div className="flex items-center gap-4 mb-4">
               <span className="w-8 h-px" style={{ background: 'var(--muted)' }}></span>
@@ -46,11 +46,11 @@ export default function Portfolio() {
           </div>
 
           {/* Filters */}
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-2 flex-wrap sm:flex-nowrap">
             {filters.map(f => (
               <button key={f}
                 onClick={() => { setActive(f); setLimit(6) }}
-                className="text-xs tracking-widest uppercase px-4 py-2 transition-all duration-300"
+                className="text-xs tracking-widest uppercase px-2 sm:px-4 py-1.5 sm:py-2 transition-all duration-300 flex-1 sm:flex-initial"
                 style={{
                   border: '1px solid',
                   borderColor: active === f ? 'var(--text)' : 'var(--border)',
@@ -64,7 +64,7 @@ export default function Portfolio() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
           {visible.map((p) => (
             <a key={p.id} href={p.video} target="_blank" rel="noopener noreferrer"
               className="portfolio-card group block relative aspect-video"
