@@ -17,7 +17,7 @@ export default function Hero() {
   const title = "JAHID SHAWN"
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 pt-20 sm:pt-24 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-10 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-12 pt-16 sm:pt-20 md:pt-24 overflow-hidden">
 
       {/* Background grid */}
       <div className="absolute inset-0 pointer-events-none" style={{
@@ -61,7 +61,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
           <a href="#portfolio"
-            className="group flex items-center gap-3 border border-white/20 px-6 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300">
+            className="group flex items-center gap-3 border border-white/20 px-5 sm:px-6 md:px-7 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300">
             View Works
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="group-hover:translate-x-1 transition-transform">
               <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -92,9 +92,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="animate-fade-in opacity-0-init delay-600 absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="hidden sm:flex animate-fade-in opacity-0-init delay-600 absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
         <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--muted)' }}>Scroll</span>
-        <div className="w-px h-12 overflow-hidden" style={{ background: 'var(--border)' }}>
+        <div className="w-px h-8 sm:h-12 overflow-hidden" style={{ background: 'var(--border)' }}>
           <div className="w-full h-full" style={{
             background: 'var(--text)',
             animation: 'slideDown 1.5s ease infinite'
