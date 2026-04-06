@@ -17,7 +17,7 @@ export default function Hero() {
   const title = "JAHID SHAWN"
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-10 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-12 pt-16 sm:pt-20 md:pt-24 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col justify-end pb-10 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-12 pt-12 sm:pt-16 md:pt-24 overflow-hidden">
 
       {/* Background grid */}
       <div className="absolute inset-0 pointer-events-none" style={{
@@ -29,6 +29,7 @@ export default function Hero() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%)' }} />
 
+      <div className="max-w-7xl mx-auto w-full">
       {/* Available badge */}
       <div className="animate-fade-in opacity-0-init delay-200 flex items-center gap-3 mb-8">
         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
@@ -90,7 +91,9 @@ export default function Hero() {
         </div>
         <p className="mt-3 text-xs tracking-[0.2em] uppercase text-center" style={{ color: 'var(--muted)' }}>2+ Years Experience</p>
       </div>
+</div>
 
+      
       {/* Scroll indicator */}
       <div className="hidden sm:flex animate-fade-in opacity-0-init delay-600 absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
         <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--muted)' }}>Scroll</span>

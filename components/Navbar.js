@@ -18,7 +18,7 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'nav-blur' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="font-display text-xl sm:text-2xl tracking-widest flex-shrink-0">JAHID.</a>
+          <a href="#home" className="font-display text-2xl sm:text-3xl md:text-4xl tracking-widest flex-shrink-0">JAHID.SHAWN</a>
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-8">
